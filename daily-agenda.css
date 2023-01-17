@@ -1,0 +1,100 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin:0 ; 
+  padding: 0;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif ;
+  line-height: 1.5;
+  background:wheat;
+  
+
+}
+.container{
+  max-width: 800px;
+  margin:20px auto; 
+  padding:20px 30px;
+  border:2px solid black;
+  
+}
+.head{
+  margin-bottom: 20px;
+  padding:5px;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head h4{
+  display: inline-block;  
+}
+header .day{
+  padding:10px;
+  font-weight: bold;
+}
+h3{
+  display:inline-block; 
+  text-decoration: underline;
+}
+.plan{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25%;
+}
+.note{
+  /* border:1px solid black  ;  */
+  width:49%; 
+  height:100%; 
+}
+.Priorities{
+  /* border:1px solid black  ;  */
+  width:49%; 
+  height:100%; 
+}
+.line{
+  width:80%; 
+  height:12px;
+  border-bottom: 1px solid black;
+  line-height: 1.2;
+  display: block;
+  margin-bottom:12px;
+}
+
+.time-table{
+  display: flex;
+  justify-content:start;
+  gap:70px;
+  align-items: flex-start;
+  margin:15px;
+}
+
+.label{
+  display:flex; 
+  flex-direction:column; 
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  position: relative;
+  margin-left:15px;
+}
+.label::before{
+  content: '';
+  position: absolute;
+  top:6px; 
+  left:-90%; 
+  width:25px; 
+  height:25px ; 
+  border:2px solid black;
+  border-radius: 4px;
+  
+}
+
+.data{
+  border:2px solid black;
+  border-radius: 4px;
+  height:70px;
+  width:60%
+}
